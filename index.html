@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h2 id="playerName" class="player__name"></h2>
+    <div id="game" class="rps__game">
+        <div id="scoreTracker" class="score__tracker">
+            <p class="score__label">Score</p>
+            <p id="score">0</p>
+        </div>
+        <h2>CHOOSE YOUR WEAPON!</h2>
+        <div id="choices" class="choice__display-container">
+            <div id="playerChoice">
+                <p id="playerChoiceLabel">Player:</p>
+                <div id="displayPlayerChoice" class="choice__display">❓</div>
+            </div>
+            <span class="choice__vs">VS</span>
+            <div id="computerChoice">
+                <p id="computerChoiceLabel">Computer:</p>
+                <div id="displayComputerChoice" class="choice__display">❓</div>
+            </div>
+        </div>
+        <div id="choices">
+            <button class="choice" id="rock">🪨 Rock</button>
+            <button class="choice" id="paper">📄 Paper</button>
+            <button class="choice" id="scissors">✂️ Scissors</button>
+        </div>
+        <div id="result" class="game__result">
+            <p>Result:</p>
+            <span id="gameResult">Rock, Paper, or Scissors, What will you choose?</span>
+        </div>
+    </div>
+</body>
+</html>

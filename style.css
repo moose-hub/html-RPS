@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    
+    color: #00FFA3;
+    overflow: hidden;
+    background: #10141d;
+    box-shadow: inset 0px 0px 39px 6px, 0px 0px 39px 6px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+
+    font-size: 14px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.rps__game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+    width: 80%;
+    max-width: 600px;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 255, 163, 0.1);
+
+    transition: box-shadow .225s ease-in-out;
+    user-select: none;
+    cursor: pointer;
+}
+
+.rps__game:hover {
+    box-shadow: 1px 0px 20px 20px rgba(0, 255, 163, 0.1)
+}
+
+.choice__display {
+    font-size: 2.5rem;
+}
+
+.choice__vs {
+    font-size: 1.5rem;
+}
+
+.choice__display-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.choice {
+    border: 2px solid #00FFA3;
+    background-color: transparent;
+    color: #00FFA3;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.choice:hover {
+    background-color: rgba(0, 255, 163, 0.2);
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+.game__results {
+
+}
+
+.result__computer, .result__game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game__result {
+    color: #FF69B4;
+    line-height: 1.5;
+}
+
+
+.score__tracker {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #328c7f;
+    color: black;
+    z-index: 999;
+
+    top: -5%;
+    right: -5%;
+
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: .8rem;
+}
